@@ -12,6 +12,6 @@
   "main": "index.js",
   "files": ["*.js"],
   "peerDependencies": {
-    "eslint": ">=8.2.0"
+    "stylelint": ">=8.2.0"
   }
 }
