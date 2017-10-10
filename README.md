@@ -1,4 +1,4 @@
-# 'stylelint-config-prettier'
+# `stylelint-config-prettier`
 
 [![NPM version][npm-img]][npm-url] [![Downloads][downloads-img]][npm-url]
 
