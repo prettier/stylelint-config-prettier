@@ -2,6 +2,8 @@
 
 module.exports = {
     rules: {
+        'indentation': null,
+
         'function-comma-newline-after': null,
         'function-comma-newline-before': null,
         'function-comma-space-after': null,
