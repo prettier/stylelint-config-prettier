@@ -18,6 +18,6 @@
     "*.js"
   ],
   "peerDependencies": {
-    "stylelint": ">=8.2.0"
+    "stylelint": ">=8.0.0"
   }
 }
