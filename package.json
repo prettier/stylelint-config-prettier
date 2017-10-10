@@ -1,16 +1,22 @@
 {
   "name": "stylelint-config-prettier",
-  "version": "1.0.0",
-  "description":
-    "Turns off all rules that are unnecessary or might conflict with Prettier.",
-  "keywords": ["stylelint", "prettier", "config", "lint", "css"],
+  "version": "1.0.1",
+  "description": "Turns off all rules that are unnecessary or might conflict with Prettier.",
+  "keywords": [
+    "stylelint",
+    "prettier",
+    "config",
+    "lint",
+    "css"
+  ],
   "author": "Shannon Moeller <me@shannonmoeller.com>",
-  "homepage":
-    "https://github.com/shannonmoeller/stylelint-config-prettier#readme",
+  "homepage": "https://github.com/shannonmoeller/stylelint-config-prettier#readme",
   "repository": "shannonmoeller/stylelint-config-prettier",
   "license": "MIT",
   "main": "index.js",
-  "files": ["*.js"],
+  "files": [
+    "*.js"
+  ],
   "peerDependencies": {
     "stylelint": ">=8.2.0"
   }
