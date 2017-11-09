@@ -33,6 +33,8 @@ module.exports = {
         'declaration-block-semicolon-newline-before': null,
         'declaration-block-semicolon-space-after': null,
         'declaration-block-semicolon-space-before': null,
+        "declaration-block-no-redundant-longhand-properties": null,
+        "declaration-block-no-shorthand-property-overrides": null,
 
         // prettier always adds the trailing semicolon
         'declaration-block-trailing-semicolon': null,
@@ -82,7 +84,9 @@ module.exports = {
         // 'comment-whitespace-inside': 'always'
 
         'max-empty-lines': null,
-        'no-eol-whitespace': null
+        'no-eol-whitespace': null,
+        "number-leading-zero": null,
+        "rule-empty-line-before": null
     }
 };
 
