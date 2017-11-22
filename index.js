@@ -86,7 +86,10 @@ module.exports = {
         'max-empty-lines': null,
         'no-eol-whitespace': null,
         "number-leading-zero": null,
-        "rule-empty-line-before": null
+        "rule-empty-line-before": null,
+        
+        // misc other rules
+        "color-hex-case": null
     }
 };
 
