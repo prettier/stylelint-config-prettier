@@ -34,9 +34,7 @@ override other configs.
 
 ----
 
-© Shannon Moeller <me@shannonmoeller.com> (shannonmoeller.com)
-
-Licensed under [MIT](http://shannonmoeller.com/mit.txt)
+MIT © [Shannon Moeller](http://shannonmoeller.com)
 
 [downloads-img]: http://img.shields.io/npm/dm/stylelint-config-prettier.svg?style=flat-square
 [npm-img]:       http://img.shields.io/npm/v/stylelint-config-prettier.svg?style=flat-square
