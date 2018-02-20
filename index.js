@@ -3,6 +3,7 @@
 module.exports = {
     rules: {
         'indentation': null,
+        'max-line-length': null,
 
         'function-comma-newline-after': null,
         'function-comma-newline-before': null,
@@ -33,8 +34,8 @@ module.exports = {
         'declaration-block-semicolon-newline-before': null,
         'declaration-block-semicolon-space-after': null,
         'declaration-block-semicolon-space-before': null,
-        "declaration-block-no-redundant-longhand-properties": null,
-        "declaration-block-no-shorthand-property-overrides": null,
+        'declaration-block-no-redundant-longhand-properties': null,
+        'declaration-block-no-shorthand-property-overrides': null,
 
         // prettier always adds the trailing semicolon
         'declaration-block-trailing-semicolon': null,
@@ -55,8 +56,8 @@ module.exports = {
         // 'selector-attribute-operator-space-before': 'never'
 
         'selector-attribute-quotes': 'always',
-        'selector-combinator-space-after': 'always',
-        'selector-combinator-space-before': 'always',
+        'selector-combinator-space-after': null,
+        'selector-combinator-space-before': null,
         'selector-descendant-combinator-no-non-space': true,
         'selector-pseudo-class-parentheses-space-inside': 'never',
         'selector-list-comma-newline-after': null,
@@ -73,8 +74,8 @@ module.exports = {
 
         'media-query-list-comma-newline-after': null,
         'media-query-list-comma-newline-before': null,
-        'media-query-list-comma-space-after': 'always',
-        'media-query-list-comma-space-before': 'never',
+        'media-query-list-comma-space-after': null,
+        'media-query-list-comma-space-before': null,
         'at-rule-name-newline-after': null,
         'at-rule-name-space-after': 'always',
         'at-rule-semicolon-newline-after': null,
@@ -85,11 +86,11 @@ module.exports = {
 
         'max-empty-lines': null,
         'no-eol-whitespace': null,
-        "number-leading-zero": null,
-        "rule-empty-line-before": null,
-        
-        // misc other rules
-        "color-hex-case": null
+        'number-leading-zero': null,
+        'rule-empty-line-before': null,
+
+        // prettier lowercases hex colors
+        'color-hex-case': null
     }
 };
 

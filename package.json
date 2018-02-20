@@ -10,7 +10,6 @@
     "css"
   ],
   "author": "Shannon Moeller <me@shannonmoeller.com>",
-  "homepage": "https://github.com/shannonmoeller/stylelint-config-prettier#readme",
   "repository": "shannonmoeller/stylelint-config-prettier",
   "license": "MIT",
   "main": "index.js",
