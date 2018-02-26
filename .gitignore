@@ -1,0 +1,11 @@
+# Node
+node_modules/
+
+# NPM
+package-lock.json
+
+# JetBrains IDEs
+*.iml
+.idea/
+.webstorm/
+*.swp

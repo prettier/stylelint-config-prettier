@@ -27,6 +27,20 @@ override other configs.
 }
 ```
 
+## CLI helper tool
+
+`stylelint-config-prettier` is shipped with a little CLI tool to help you 
+check if your configuration contains any rules that are in conflict with Prettier.
+
+In order to execute the CLI tool, first add a script for it to `package.json`:
+```json
+{
+  "scripts": {
+    "stylelint-check": "stylelint-config-prettier-check ./.stylelintrc"
+  }
+}
+```
+Then run `npm run stylelint-check`.
 ## Attribution
 
 - Insprired by [`eslint-config-prettier`](http://npm.im/eslint-config-prettier).
