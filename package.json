@@ -10,13 +10,21 @@
     "css"
   ],
   "author": "Shannon Moeller <me@shannonmoeller.com>",
+  "contributors": [
+    "Corentin Tenret <tenretcorentin@gmail.com>"
+  ],
   "repository": "shannonmoeller/stylelint-config-prettier",
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "dependencies": {
+    "stylelint": "9.1.1"
+  },
+  "bin": {
+    "stylelint-config-prettier-check": "bin/check.js"
+  },
   "files": [
-    "*.js"
-  ],
-  "peerDependencies": {
-    "stylelint": ">=8.0.0"
-  }
+    "bin/check.js",
+    "lib/index.json",
+    "lib/checker.js"
+  ]
 }
