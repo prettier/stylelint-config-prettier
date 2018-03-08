@@ -36,7 +36,7 @@ In order to execute the CLI tool, first add a script for it to `package.json`:
 ```json
 {
   "scripts": {
-    "stylelint-check": "stylelint-config-prettier-check ./.stylelintrc"
+    "stylelint-check": "stylelint-config-prettier-check"
   }
 }
 ```
