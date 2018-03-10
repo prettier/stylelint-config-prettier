@@ -11,7 +11,7 @@
     "report": "nyc report -r text-lcov | coveralls",
     "pretest": "run-s lint",
     "precommit": "run-s test build && git add .",
-    "prepublishOnly": "run-s test build"
+    "prepublishOnly": "run-s test"
   },
   "keywords": [
     "stylelint",
