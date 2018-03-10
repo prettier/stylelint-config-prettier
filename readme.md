@@ -2,7 +2,7 @@
 
 [![NPM version][npm-img]][npm-url] [![Downloads][downloads-img]][npm-url] [![Build Status][travis-img]][travis-url] [![Coverage Status][coveralls-img]][coveralls-url]
 
-Turns off all rules that are unnecessary or might conflict with Prettier. This lets you use you favorite shareable config without letting its stylistic choices get in the way when using Prettier.
+Turns off all rules that are unnecessary or might conflict with Prettier. This lets you use your favorite shareable config without letting its stylistic choices get in the way when using Prettier.
 
 ## Installation
 
