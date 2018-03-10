@@ -1,11 +1,13 @@
-# Node
+.nyc_output/
+coverage/
+dist/
 node_modules/
 
-# NPM
-package-lock.json
-
-# JetBrains IDEs
 *.iml
+*.log
+.*.swp
+.DS_Store
+.Trash*
 .idea/
+.npmignore
 .webstorm/
-*.swp

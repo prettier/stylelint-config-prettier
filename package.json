@@ -2,6 +2,17 @@
   "name": "stylelint-config-prettier",
   "version": "2.1.0",
   "description": "Turns off all rules that are unnecessary or might conflict with Prettier.",
+  "scripts": {
+    "lint": "run-s lint-*",
+    "lint-prettier": "prettier --ignore-path .gitignore --write \"**/*.js\"",
+    "lint-eslint": "eslint --ignore-path .gitignore --fix \"**/*.js\"",
+    "test": "nyc -r none run-s test-* && nyc report",
+    "test-node": "NODE_ENV=test blue-tape test/*.js | tap-diff",
+    "report": "nyc report -r text-lcov | coveralls",
+    "pretest": "run-s lint",
+    "precommit": "run-s test build && git add .",
+    "prepublishOnly": "run-s test build"
+  },
   "keywords": [
     "stylelint",
     "prettier",
@@ -15,10 +26,7 @@
   ],
   "repository": "shannonmoeller/stylelint-config-prettier",
   "license": "MIT",
-  "main": "lib/index.js",
-  "dependencies": {
-    "stylelint": "9.1.1"
-  },
+  "main": "src/index.js",
   "bin": {
     "stylelint-config-prettier-check": "bin/check.js"
   },
@@ -26,5 +34,44 @@
     "bin/check.js",
     "lib/index.json",
     "lib/checker.js"
-  ]
+  ],
+  "dependencies": {
+    "stylelint": "^9.1.1"
+  },
+  "devDependencies": {
+    "blue-tape": "^1.0.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-whim": "^3.1.0",
+    "npm-run-all": "^4.1.2",
+    "nyc": "^11.4.1",
+    "prettier": "^1.11.1",
+    "stylelint-config-standard": "^18.2.0",
+    "tap-diff": "^0.1.1"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-whim",
+      "eslint-config-prettier"
+    ]
+  },
+  "nyc": {
+    "include": [
+      "src/**"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "engines": {
+    "node": ">= 6",
+    "npm": ">= 3"
+  }
 }

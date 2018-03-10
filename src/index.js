@@ -2,7 +2,7 @@
 
 module.exports = {
 	rules: {
-		'indentation': null,
+		indentation: null,
 		'max-line-length': null,
 
 		'function-comma-newline-after': null,
@@ -107,7 +107,7 @@ module.exports = {
 		// prettier lowercases pseudo element selectors
 		'selector-pseudo-element-case': null,
 
-		//prettier removes empty lines in selector blocks
+		// prettier removes empty lines in selector blocks
 		'selector-max-empty-lines': null,
 
 		// prettier lowercases media feature names
@@ -117,6 +117,6 @@ module.exports = {
 		'at-rule-name-case': null,
 
 		// prettier removes extra semicolons
-		'no-extra-semicolons': null
-	}
+		'no-extra-semicolons': null,
+	},
 };
