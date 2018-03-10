@@ -31,9 +31,9 @@
     "stylelint-config-prettier-check": "bin/check.js"
   },
   "files": [
-    "bin/check.js",
-    "lib/index.json",
-    "lib/checker.js"
+    "bin",
+    "src",
+    "*.md"
   ],
   "dependencies": {
     "stylelint": "^9.1.1"
