@@ -58,7 +58,7 @@ module.exports = {
 		'selector-attribute-quotes': 'always',
 		'selector-combinator-space-after': null,
 		'selector-combinator-space-before': null,
-		'selector-descendant-combinator-no-non-space': true,
+		'selector-descendant-combinator-no-non-space': null,
 		'selector-pseudo-class-parentheses-space-inside': 'never',
 		'selector-list-comma-newline-after': null,
 		'selector-list-comma-newline-before': null,
