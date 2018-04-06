@@ -76,6 +76,7 @@ module.exports = {
 		'media-query-list-comma-newline-before': null,
 		'media-query-list-comma-space-after': null,
 		'media-query-list-comma-space-before': null,
+		'at-rule-empty-line-before': null,
 		'at-rule-name-newline-after': null,
 		'at-rule-name-space-after': 'always',
 		'at-rule-semicolon-newline-after': null,
