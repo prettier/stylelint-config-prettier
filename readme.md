@@ -53,5 +53,5 @@ Then run `npm run stylelint-check`.
 [downloads-img]: http://img.shields.io/npm/dm/stylelint-config-prettier.svg?style=flat-square
 [npm-img]:       http://img.shields.io/npm/v/stylelint-config-prettier.svg?style=flat-square
 [npm-url]:       https://npmjs.org/package/stylelint-config-prettier
-[travis-img]:    http://img.shields.io/travis/shannonmoeller/stylelint-config-prettier.svg?style=flat-square
-[travis-url]:    https://travis-ci.org/shannonmoeller/stylelint-config-prettier
+[travis-img]:    http://img.shields.io/travis/prettier/stylelint-config-prettier.svg?style=flat-square
+[travis-url]:    https://travis-ci.org/prettier/stylelint-config-prettier
