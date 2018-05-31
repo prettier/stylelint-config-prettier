@@ -46,7 +46,7 @@ Then run `npm run stylelint-check`.
 
 ----
 
-MIT © [Shannon Moeller](http://shannonmoeller.com)
+[MIT](license)
 
 [coveralls-img]: http://img.shields.io/coveralls/shannonmoeller/stylelint-config-prettier/master.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/shannonmoeller/stylelint-config-prettier
