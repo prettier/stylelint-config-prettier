@@ -119,8 +119,8 @@ module.exports = {
 
 		// prettier removes extra semicolons
 		'no-extra-semicolons': null,
-		
+
 		// prettier has its own quotes rule
-		'string-quotes': null
+		'string-quotes': null,
 	},
 };
