@@ -35,7 +35,7 @@
     "src",
     "*.md"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "stylelint": "^9.1.1"
   },
   "devDependencies": {
@@ -48,6 +48,7 @@
     "npm-run-all": "^4.1.2",
     "nyc": "^11.4.1",
     "prettier": "^1.11.1",
+    "stylelint": "^9.1.1",
     "stylelint-config-standard": "^18.2.0",
     "tap-diff": "^0.1.1"
   },
