@@ -55,7 +55,7 @@ module.exports = {
 		// 'selector-attribute-operator-space-after': 'never'
 		// 'selector-attribute-operator-space-before': 'never'
 
-		'selector-attribute-quotes': 'always',
+		'selector-attribute-quotes': 'never',
 		'selector-combinator-space-after': null,
 		'selector-combinator-space-before': null,
 		'selector-descendant-combinator-no-non-space': null,
