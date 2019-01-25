@@ -40,7 +40,7 @@ Then run `npm run stylelint-check`.
 
 ## Attribution
 
-- Insprired by [`eslint-config-prettier`](http://npm.im/eslint-config-prettier).
+- Inspired by [`eslint-config-prettier`](http://npm.im/eslint-config-prettier).
 - CLI helper inspired by [`tslint-config-prettier`](https://github.com/alexjoverm/tslint-config-prettier).
 - Original disabled ruleset copied from [`prettier-stylelint`](http://npm.im/prettier-stylelint).
 
