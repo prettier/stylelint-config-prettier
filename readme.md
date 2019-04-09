@@ -12,11 +12,12 @@ Install `stylelint-config-prettier`:
 $ npm install --save-dev stylelint-config-prettier
 ```
 
-Then, add `stylelint-config-prettier` to the `extends` array in your `.stylelintrc.*` file. Make sure to put it **last,** so it will override other configs.
+Then, append `stylelint-config-prettier` to the [`extends` array](https://stylelint.io/user-guide/configuration/#extends) in your `.stylelintrc.*` file. Make sure to put it **last,** so it will override other configs.
 
-```json
+```js
 {
   "extends": [
+    // other config ...
     "stylelint-config-prettier"
   ]
 }
