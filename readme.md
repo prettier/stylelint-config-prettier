@@ -17,7 +17,7 @@ Then, append `stylelint-config-prettier` to the [`extends` array](https://stylel
 ```js
 {
   "extends": [
-    // other config ...
+    // other configs ...
     "stylelint-config-prettier"
   ]
 }
