@@ -35,7 +35,7 @@
     "*.md"
   ],
   "peerDependencies": {
-    "stylelint": "^9.1.1"
+    "stylelint": "^9.1.1 || ^10.0.0"
   },
   "devDependencies": {
     "blue-tape": "^1.0.0",
