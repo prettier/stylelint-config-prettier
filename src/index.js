@@ -85,6 +85,7 @@ module.exports = {
 
 		'max-empty-lines': null,
 		'no-eol-whitespace': null,
+		'no-missing-end-of-source-newline': null,
 		'number-leading-zero': null,
 		'rule-empty-line-before': null,
 
