@@ -2,9 +2,9 @@ sudo: false
 language: node_js
 node_js:
   - 'node'
+  - '12'
   - '10'
   - '8'
-  - '6'
 before_script:
   - npm prune
 after_success:
