@@ -4,6 +4,8 @@ const stylelintConfigPrettier = require('./index');
 const stylelint = require('stylelint');
 const { resolve } = require('path');
 
+const { hasOwnProperty } = Object.prototype;
+
 function check(path) {
 	const resolvedPath = resolve(process.cwd(), path || '');
 
@@ -17,7 +19,7 @@ function check(path) {
 
 			Object.keys(prettierRules).forEach((rule) => {
 				if (
-					configRules.hasOwnProperty(rule) &&
+					hasOwnProperty.call(configRules, rule) &&
 					configRules[rule] !== null &&
 					configRules[rule][0] !== prettierRules[rule]
 				) {
