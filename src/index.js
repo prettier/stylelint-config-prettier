@@ -3,6 +3,7 @@
 module.exports = {
 	rules: {
 		indentation: null,
+		linebreaks: null,
 		'max-line-length': null,
 
 		'function-comma-newline-after': null,
