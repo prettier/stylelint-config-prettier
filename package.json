@@ -23,7 +23,7 @@
   "contributors": [
     "Corentin Tenret <tenretcorentin@gmail.com>"
   ],
-  "repository": "shannonmoeller/stylelint-config-prettier",
+  "repository": "prettier/stylelint-config-prettier",
   "license": "MIT",
   "main": "src/index.js",
   "bin": {
