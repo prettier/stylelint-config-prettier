@@ -5,8 +5,8 @@
   "scripts": {
     "prepublishOnly": "npm run test",
     "pretest": "npm run lint && npm run format",
-    "lint": "npr eslint --fix \"{bin,src,test}/*.js\"",
-    "format": "npr prettier --write \"{bin,src,test}/*.js\"",
+    "lint": "npr eslint --fix '{bin,src,test}/*.js'",
+    "format": "npr prettier --write '{bin,src,test}/*.js'",
     "test": "node test/checker.js"
   },
   "keywords": [
