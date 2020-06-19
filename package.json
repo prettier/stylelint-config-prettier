@@ -5,8 +5,8 @@
   "scripts": {
     "prepublishOnly": "npm run test",
     "pretest": "npm run lint && npm run format",
-    "lint": "eslint --fix \"{bin,src,test}/*.js\"",
-    "format": "prettier --write \"{bin,src,test}/*.js\"",
+    "lint": "npr eslint --fix \"{bin,src,test}/*.js\"",
+    "format": "npr prettier --write \"{bin,src,test}/*.js\"",
     "test": "node test/checker.js"
   },
   "keywords": [
@@ -32,8 +32,11 @@
     "stylelint": ">=11.0.0"
   },
   "devDependencies": {
+    "npm-bin-deps": "^1.9.0",
+    "eslint-config-prettier": "^6.11.0"
+  },
+  "binDependencies": {
     "eslint": "^7.3.0",
-    "eslint-config-prettier": "^6.11.0",
     "prettier": "^2.0.5"
   },
   "eslintConfig": {
