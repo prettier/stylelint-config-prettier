@@ -1,3 +1,6 @@
 {
-  "extends": ["stylelint-config-standard", "../.."]
+  "extends": [
+    "../config.js",
+    "../../src/index.js"
+  ]
 }

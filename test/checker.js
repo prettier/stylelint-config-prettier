@@ -1,18 +1,22 @@
-const { check } = require('../src/checker');
-const test = require('blue-tape');
+const assert = require('assert');
+const { check } = require('../src/checker.js');
 
-test('should find conflicts', (t) =>
-	check('test/fail').then((conflicts) => {
-		t.ok(conflicts.length > 0);
-		t.ok(conflicts.includes('indentation'));
-	}));
+async function test() {
+	const error = await check().catch((error) => error);
 
-test('should not find conflicts', (t) =>
-	check('test/pass').then((conflicts) => {
-		t.equal(conflicts, null);
-	}));
+	assert(/No configuration provided/.test(error.message));
 
-test('should not find config', (t) =>
-	check().catch((err) => {
-		t.ok(/No configuration provided/.test(err.message));
-	}));
+	const fail = await check('./test/fail');
+
+	assert(fail.length > 0);
+	assert(fail.includes('indentation'));
+
+	const pass = await check('./test/pass');
+
+	assert(pass === null);
+}
+
+test().catch((error) => {
+	console.error(error);
+	process.exitCode = 1;
+});
