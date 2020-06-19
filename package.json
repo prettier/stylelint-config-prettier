@@ -3,14 +3,11 @@
   "version": "8.0.1",
   "description": "Turns off all rules that are unnecessary or might conflict with Prettier.",
   "scripts": {
-    "lint": "run-s lint-*",
-    "lint-prettier": "prettier --ignore-path .gitignore --write \"**/*.js\"",
-    "lint-eslint": "eslint --ignore-path .gitignore --fix \"**/*.js\"",
-    "test": "nyc -r none run-s test-* && nyc report",
-    "test-node": "NODE_ENV=test blue-tape test/*.js | tap-diff",
-    "report": "nyc report -r text-lcov | coveralls",
-    "pretest": "run-s lint",
-    "prepublishOnly": "run-s test"
+    "prepublishOnly": "npm run test",
+    "pretest": "npm run lint && npm run format",
+    "lint": "eslint --fix \"{bin,src,test}/*.js\"",
+    "format": "prettier --write \"{bin,src,test}/*.js\"",
+    "test": "node test/checker.js"
   },
   "keywords": [
     "stylelint",
@@ -25,33 +22,23 @@
   ],
   "repository": "prettier/stylelint-config-prettier",
   "license": "MIT",
+  "type": "commonjs",
   "main": "src/index.js",
   "bin": {
+    "stylelint-config-prettier": "bin/check.js",
     "stylelint-config-prettier-check": "bin/check.js"
   },
-  "files": [
-    "bin",
-    "src",
-    "*.md"
-  ],
   "peerDependencies": {
     "stylelint": ">=11.0.0"
   },
   "devDependencies": {
-    "blue-tape": "^1.0.0",
-    "coveralls": "^3.0.6",
-    "eslint": "^6.4.0",
-    "eslint-config-prettier": "^6.3.0",
-    "husky": "^3.0.5",
-    "npm-run-all": "^4.1.5",
-    "nyc": "^14.1.1",
-    "prettier": "^1.18.2",
-    "stylelint": "^11.1.1",
-    "stylelint-config-standard": "^19.0.0",
-    "tap-diff": "^0.1.1"
+    "eslint": "^7.3.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.0.5"
   },
   "eslintConfig": {
     "env": {
+      "es6": true,
       "node": true
     },
     "extends": [
@@ -62,27 +49,11 @@
       "ecmaVersion": 2019
     }
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "run-s test"
-    }
-  },
-  "nyc": {
-    "include": [
-      "src/**"
-    ],
-    "reporter": [
-      "lcov",
-      "text"
-    ]
-  },
   "prettier": {
-    "arrowParens": "always",
-    "singleQuote": true,
-    "trailingComma": "es5"
+    "singleQuote": true
   },
   "engines": {
-    "node": ">= 6",
-    "npm": ">= 3"
+    "node": ">= 10",
+    "npm": ">= 5"
   }
 }
