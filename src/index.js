@@ -90,7 +90,6 @@ module.exports = {
 		'no-empty-first-line': null,
 		'unicode-bom': null,
 		'number-leading-zero': null,
-		'rule-empty-line-before': null,
 
 		// prettier lowercases hex colors
 		'color-hex-case': null,
