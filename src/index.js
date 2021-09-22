@@ -50,9 +50,8 @@ module.exports = {
 		'block-opening-brace-space-before': null,
 		'selector-attribute-brackets-space-inside': null,
 
-		// prettier doesnt care about this space
-		// 'selector-attribute-operator-space-after': 'never'
-		// 'selector-attribute-operator-space-before': 'never'
+		'selector-attribute-operator-space-after': null,
+		'selector-attribute-operator-space-before': null,
 
 		'selector-attribute-quotes': null,
 		'selector-combinator-space-after': null,
