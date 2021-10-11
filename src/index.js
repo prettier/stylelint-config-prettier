@@ -26,8 +26,8 @@ module.exports = {
 		// this is fixable but lets keep it
 		// 'custom-property-empty-line-before': 'never'
 
-		'declaration-bang-space-after': 'never',
-		'declaration-bang-space-before': 'always',
+		'declaration-bang-space-after': null,
+		'declaration-bang-space-before': null,
 		'declaration-colon-newline-after': null,
 		'declaration-colon-space-after': null,
 		'declaration-colon-space-before': null,
@@ -48,24 +48,23 @@ module.exports = {
 		'block-opening-brace-newline-before': null,
 		'block-opening-brace-space-after': null,
 		'block-opening-brace-space-before': null,
-		'selector-attribute-brackets-space-inside': 'never',
+		'selector-attribute-brackets-space-inside': null,
 
-		// prettier doesnt care about this space
-		// 'selector-attribute-operator-space-after': 'never'
-		// 'selector-attribute-operator-space-before': 'never'
+		'selector-attribute-operator-space-after': null,
+		'selector-attribute-operator-space-before': null,
 
-		'selector-attribute-quotes': 'always',
+		'selector-attribute-quotes': null,
 		'selector-combinator-space-after': null,
 		'selector-combinator-space-before': null,
 		'selector-descendant-combinator-no-non-space': null,
-		'selector-pseudo-class-parentheses-space-inside': 'never',
+		'selector-pseudo-class-parentheses-space-inside': null,
 		'selector-list-comma-newline-after': null,
 		'selector-list-comma-newline-before': null,
 		'selector-list-comma-space-after': null,
 		'selector-list-comma-space-before': null,
-		'media-feature-colon-space-after': 'always',
-		'media-feature-colon-space-before': 'never',
-		'media-feature-parentheses-space-inside': 'never',
+		'media-feature-colon-space-after': null,
+		'media-feature-colon-space-before': null,
+		'media-feature-parentheses-space-inside': null,
 
 		// prettier doesnt care about this space
 		// 'media-feature-range-operator-space-after': 'always',
@@ -75,11 +74,10 @@ module.exports = {
 		'media-query-list-comma-newline-before': null,
 		'media-query-list-comma-space-after': null,
 		'media-query-list-comma-space-before': null,
-		'at-rule-empty-line-before': null,
 		'at-rule-name-newline-after': null,
-		'at-rule-name-space-after': 'always',
+		'at-rule-name-space-after': null,
 		'at-rule-semicolon-newline-after': null,
-		'at-rule-semicolon-space-before': 'never',
+		'at-rule-semicolon-space-before': null,
 
 		// prettier doesnt care about this whitespace
 		// 'comment-whitespace-inside': 'always'
@@ -90,7 +88,6 @@ module.exports = {
 		'no-empty-first-line': null,
 		'unicode-bom': null,
 		'number-leading-zero': null,
-		'rule-empty-line-before': null,
 
 		// prettier lowercases hex colors
 		'color-hex-case': null,
