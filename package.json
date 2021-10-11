@@ -31,7 +31,7 @@
     "stylelint": ">=11.0.0"
   },
   "engines": {
-    "node": ">= 10"
+    "node": ">= 12"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
