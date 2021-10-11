@@ -17,10 +17,17 @@ function check(path) {
 			const configRules = config.config.rules;
 			const conflictingRules = [];
 
+			function isEmpty(value) {
+				return (
+					value === null ||
+					(Array.isArray(value) && value.length === 0)
+				);
+			}
+
 			Object.keys(prettierRules).forEach((rule) => {
 				if (
 					hasOwnProperty.call(configRules, rule) &&
-					configRules[rule] !== null &&
+					!isEmpty(configRules[rule]) &&
 					configRules[rule][0] !== prettierRules[rule]
 				) {
 					conflictingRules.push(rule);
