@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-prettier",
-  "version": "8.0.2",
+  "version": "9.0.0",
   "description": "Turns off all rules that are unnecessary or might conflict with Prettier.",
   "scripts": {
     "prepublishOnly": "npm run test",
