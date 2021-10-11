@@ -4,9 +4,8 @@
   "description": "Turns off all rules that are unnecessary or might conflict with Prettier.",
   "scripts": {
     "prepublishOnly": "npm run test",
-    "pretest": "npm run lint && npm run format",
-    "lint": "npr eslint --fix '{bin,src,test}/*.js'",
-    "format": "npr prettier --write '{bin,src,test}/*.js'",
+    "pretest": "npm run lint",
+    "lint": "npx eslint --fix \"**/*.js\" && npx prettier --write \"**/*.js\"",
     "test": "node test/checker.js"
   },
   "keywords": [
@@ -31,32 +30,19 @@
   "peerDependencies": {
     "stylelint": ">=11.0.0"
   },
-  "devDependencies": {
-    "npm-bin-deps": "^1.9.0",
-    "eslint-config-prettier": "^6.11.0"
-  },
-  "binDependencies": {
-    "eslint": "^7.3.0",
-    "prettier": "^2.0.5"
+  "engines": {
+    "node": ">= 12"
   },
   "eslintConfig": {
+    "extends": "eslint:recommended",
     "env": {
-      "es6": true,
       "node": true
     },
-    "extends": [
-      "eslint:recommended",
-      "eslint-config-prettier"
-    ],
     "parserOptions": {
-      "ecmaVersion": 2019
+      "ecmaVersion": 8
     }
   },
   "prettier": {
     "singleQuote": true
-  },
-  "engines": {
-    "node": ">= 10",
-    "npm": ">= 5"
   }
 }
