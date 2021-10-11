@@ -5,8 +5,8 @@
   "scripts": {
     "prepublishOnly": "npm run test",
     "pretest": "npm run lint && npm run format",
-    "lint": "npx eslint --fix '{bin,src,test}/*.js'",
-    "format": "npx prettier --write '{bin,src,test}/*.js'",
+    "lint": "npx eslint --fix '**/*.js'",
+    "format": "npx prettier --write '**/*.js'",
     "test": "node test/checker.js"
   },
   "keywords": [
