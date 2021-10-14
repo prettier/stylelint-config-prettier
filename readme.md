@@ -1,6 +1,6 @@
 # stylelint-config-prettier
 
-[![NPM version][npm-img]][npm-url] [![Downloads][downloads-img]][npm-url] [![Build Status][travis-img]][travis-url]
+[![NPM version][npm-img]][npm-url] [![Downloads][downloads-img]][npm-url]
 
 Turns off all rules that are unnecessary or might conflict with Prettier. This lets you use your favorite shareable config without letting its stylistic choices get in the way when using Prettier.
 
@@ -52,5 +52,3 @@ Then run `npm run stylelint-check`.
 [downloads-img]: http://img.shields.io/npm/dm/stylelint-config-prettier.svg?style=flat-square
 [npm-img]:       http://img.shields.io/npm/v/stylelint-config-prettier.svg?style=flat-square
 [npm-url]:       https://npmjs.org/package/stylelint-config-prettier
-[travis-img]:    http://img.shields.io/travis/prettier/stylelint-config-prettier.svg?style=flat-square
-[travis-url]:    https://travis-ci.org/prettier/stylelint-config-prettier
