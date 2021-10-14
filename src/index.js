@@ -5,6 +5,7 @@ module.exports = {
 		indentation: null,
 		linebreaks: null,
 
+		'at-rule-empty-line-before': null,
 		'at-rule-name-case': null,
 		'at-rule-name-newline-after': null,
 		'at-rule-name-space-after': null,
