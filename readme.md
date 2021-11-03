@@ -41,14 +41,14 @@ Then run `npm run stylelint-check`.
 
 ## Attribution
 
-- Inspired by [`eslint-config-prettier`](http://npm.im/eslint-config-prettier).
+- Inspired by [`eslint-config-prettier`](https://npm.im/eslint-config-prettier).
 - CLI helper inspired by [`tslint-config-prettier`](https://github.com/alexjoverm/tslint-config-prettier).
-- Original disabled ruleset copied from [`prettier-stylelint`](http://npm.im/prettier-stylelint).
+- Original disabled ruleset copied from [`prettier-stylelint`](https://npm.im/prettier-stylelint).
 
 ----
 
 [MIT](license)
 
-[downloads-img]: http://img.shields.io/npm/dm/stylelint-config-prettier.svg?style=flat-square
-[npm-img]:       http://img.shields.io/npm/v/stylelint-config-prettier.svg?style=flat-square
+[downloads-img]: https://img.shields.io/npm/dm/stylelint-config-prettier.svg?style=flat-square
+[npm-img]:       https://img.shields.io/npm/v/stylelint-config-prettier.svg?style=flat-square
 [npm-url]:       https://npmjs.org/package/stylelint-config-prettier
