@@ -18,6 +18,7 @@ jobs:
           - macos-latest
           - windows-latest
         stylelint-version:
+          - 14
           - 13
           - 12
           - 11
