@@ -44,6 +44,8 @@ module.exports = {
 		'media-feature-colon-space-before': null,
 		'media-feature-name-case': null,
 		'media-feature-parentheses-space-inside': null,
+		'media-feature-range-operator-space-after': null,
+		'media-feature-range-operator-space-before': null,
 		'media-query-list-comma-newline-after': null,
 		'media-query-list-comma-newline-before': null,
 		'media-query-list-comma-space-after': null,
