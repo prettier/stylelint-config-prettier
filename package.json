@@ -27,7 +27,7 @@
     "stylelint-config-prettier-check": "bin/check.js"
   },
   "peerDependencies": {
-    "stylelint": ">=11.0.0"
+    "stylelint": ">= 11.x <= 15.x"
   },
   "engines": {
     "node": ">= 12"
