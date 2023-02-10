@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-prettier",
-  "version": "9.0.4",
+  "version": "9.0.5",
   "description": "Turns off all rules that are unnecessary or might conflict with Prettier.",
   "scripts": {
     "lint": "npx eslint --fix \"**/*.js\" && npx prettier --write \"**/*.js\"",
